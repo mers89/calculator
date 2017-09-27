@@ -10,3 +10,9 @@ x=box.value
 x=eval(x);
 box.value=x;
 }
+
+function power(){
+  x=box.value
+  x=eval(x*x);
+  box.value=x;
+}
