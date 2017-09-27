@@ -4,3 +4,8 @@ function addtoscreen(x){
     box.value= ' ';
   }
 }
+function answer(){
+x=box.value
+x=eval(x);
+box.value=x;
+}
