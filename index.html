@@ -1,105 +1,57 @@
 <!DOCTYPE html>
 <html >
- <head>
- <title> Calculator</title>
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Mercy Manrique</title>
   
- 
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- </head>
- 
-<style>
- body {background-color: #0998a6;
- text-align:center;
- }
- 
- h1{
-  color: white;
-  font-weight: bold;
-  font-size:3em;
-  text-shadow: 2px 4px 5px black;
- }
- 
- #calculator{
-  background-image: url("http://data.whicdn.com/images/109684141/large.jpg");
- 
-  width: 275px;
-  height: 340px;
-  border: 1px solid black;
-  padding: 20px;
-  border-radius: 20px;
-  margin: 50px auto;
-  box-shadow: 0px 0px 3px 6px #ccc
- }
- 
- #display {
-  margin-bottom: 20px;
-  height: 30px;
-  width: 10em;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 0px 0px 1px 1px black;
-  text-align: right;
-  font: 20px bold;
- }
- 
- #keys{
-  width: 41px;
-  height: 35px;
-  margin: 4px;
-  box-shadow: 0px 0px 2px 1px black;
-  border-radius: 2px;
-  outline: none;
- }
- 
- #equal{
-  width: 96px;
-  height: 35px;
-  margin: 4px;
-  box-shadow: 0px 0px 2px 1px black;
-  border-radius: 2px;
-  outline: none;
- }
- 
-</style>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
 
 <body>
-<h1>Javascript Calculator </h1>
-<div id='calculator'>
-<form>
-<input type='text' id='display' disabled>
-<br>
-</form>
-<input type='button' value='C' id='keys' onclick='toScreen("c")'>
-<input type='button' value='CE' id='keys' onclick='backspace()'>
-<input type='button' value='x^2' id='keys' onclick='power()'>
-<input type='button' value='+' id='keys' onclick='toScreen("+")'>
- <br>
- <input type='button' value='9' id='keys' onclick='toScreen("9")'>
-<input type='button' value='8' id='keys' onclick='toScreen("8")'>
-<input type='button' value='7' id='keys' onclick='toScreen("7")'>
-<input type='button' value='-' id='keys' onclick='toScreen("-")'>
- <br>
-<input type='button' value='6' id='keys' onclick='toScreen("6")'>
-<input type='button' value='5' id='keys' onclick='toScreen("5")'>
-<input type='button' value='4' id='keys' onclick='toScreen("4")'>
-<input type='button' value='+' id='keys' onclick='toScreen("+")'>
- <br>
- <input type='button' value='3' id='keys' onclick='toScreen("3")'>
-<input type='button' value='2' id='keys' onclick='toScreen("2")'>
-<input type='button' value='1' id='keys' onclick='toScreen("1")'>
-<input type='button' value='/' id='keys' onclick='toScreen("/")'>
- <br>
-<input type='button' value='0' id='keys' onclick='toScreen("0")'>
-<input type='button' value='.' id='keys' onclick='toScreen(".")'>
-<input type='button' value='=' id='equal' onclick='equal()'>
- </form>
- <h3> Calculator</h3>
- 
-</div>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
- <script src="index.js"></script>
+  
+<body>
+  <h1> Javascript Calculator </h1>
+  <div id='calc'>
+    <form>
+      <input type='text' id='display' disabled>
+      <br> 
+      <input type='button' value='C' id='keys' onclick='addtoscreen("c")'>
+      <input type='button' value='CE' id='keys' onclick='backspace()'>
+      <input type='button' value='x^2' id='keys' onclick='power()'>
+      <input type='button' value='+' id='keys' onclick='addtoscreen("+")'>
+      <br>
+      <input type='button' value='9' id='keys' onclick='addtoscreen("9")'>
+      <input type='button' value='8' id='keys' onclick='addtoscreen("8")'>
+      <input type='button' value='7' id='keys' onclick='addtoscreen("7")'>
+      <input type='button' value='-' id='keys' onclick='addtoscreen("-")'>
+      <br>
+      <input type='button' value='6' id='keys' onclick='addtoscreen("6")'>
+      <input type='button' value='5' id='keys' onclick='addtoscreen("5")'>
+      <input type='button' value='4' id='keys' onclick='addtoscreen("4")'>
+      <input type='button' value='*' id='keys' onclick='addtoscreen("*")'>
+      <br>
+      <input type='button' value='3' id='keys' onclick='addtoscreen("3")'>
+      <input type='button' value='2' id='keys' onclick='addtoscreen("2")'>
+      <input type='button' value='1' id='keys' onclick='addtoscreen("1")'>
+      <input type='button' value='/' id='keys' onclick='addtoscreen("/")'>
+      <br>
+      <input type='button' value='0' id='keys' onclick='addtoscreen("0")'>
+      <input type='button' value='.' id='keys' onclick='addtoscreen(".")'>
+     <input type='button' value='=' id='equal' onclick='answer()'> 
+
+    </form>
+    <h3>JS Calculator</h3>
+  </div>
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
 
 </body>
-
 </html>
